@@ -15,7 +15,7 @@
 */
 
 #![allow(unused_variables)]
-use super::generated::{Request, StringList};
+use super::signature::{Request, StringList};
 use std::string::String;
 use std::collections::HashMap;
 

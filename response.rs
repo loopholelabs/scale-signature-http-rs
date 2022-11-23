@@ -15,7 +15,7 @@
 */
 
 #![allow(unused_variables)]
-use super::generated::{Response, StringList};
+use super::signature::{Response, StringList};
 use std::collections::HashMap;
 
 pub trait MutableResponse {

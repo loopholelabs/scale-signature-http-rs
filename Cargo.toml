@@ -10,6 +10,7 @@ wee_alloc = "0.4.5"
 
 [lib]
 crate-type = ["cdylib"]
+path = "lib.rs"
 
 # Below settings dramatically reduce wasm output size
 # See https://rustwasm.github.io/book/reference/code-size.html#optimizing-builds-for-code-sizewasm-opt -Oz -o

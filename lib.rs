@@ -1,30 +1,19 @@
 #![allow(dead_code)]
 #![allow(unused_imports)]
 
-#[path = "context/context.rs"]
 mod context;
-
-#[path = "context/request.rs"]
 mod request;
-
-#[path = "context/response.rs"]
 mod response;
-
-#[path = "compile/scale.rs"]
 mod scale;
-
-#[path = "utils/utils.rs"]
 mod utils;
-
-#[path = "generated/generated.rs"]
-mod generated;
+mod signature;
 
 use lazy_static::lazy_static;
 use std::sync::Mutex;
 
 use std::io::Cursor;
 use context::{RunContext, PTR, LEN, READ_BUFFER};
-use generated::{Context};
+use signature::Context;
 use scale::scale;
 use utils::pack_uint32;
 use std::mem;
